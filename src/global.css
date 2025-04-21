@@ -35,8 +35,8 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--text-color);
+  background: var(--white);
+  color: var(--gray-900);
   -webkit-font-smoothing: antialiased;
 }
 
