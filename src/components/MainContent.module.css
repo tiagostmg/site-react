@@ -1,0 +1,55 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: flex-start; /* Alinha os itens ao topo por padrão */
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.textContent {
+  margin: 80px 50px; /* Espaçamento entre o texto e o fundo azul */
+  color: var(--white)
+}
+
+.blueBackground {
+  background-color: var(--blue); /* Cor de fallback caso a imagem não carregue */
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.rightSection {
+  display: grid;
+  grid-template-rows: auto 1fr; /* A primeira linha para a foto, a segunda para os serviços */
+  gap: 20px; /* Espaçamento entre a foto e os serviços */
+}
+
+.peoplePhoto {
+  /* Estilos para a foto das pessoas */
+  background-color: #ccc; /* Cor de fundo temporária */
+  height: auto; /* Ajusta a altura automaticamente */
+  overflow: hidden; /* Garante que a imagem respeite o border-radius */
+}
+
+.peoplePhoto img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Três colunas de igual largura */
+  gap: 15px; /* Espaçamento entre os serviços */
+}
+
+.serviceItem {
+  background-color: #333; /* Cor de fundo dos serviços */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px; /* Opcional: Bordas arredondadas */
+}
