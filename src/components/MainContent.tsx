@@ -1,5 +1,4 @@
 import styles from './MainContent.module.css';
-import people from '../assets/pessoas.png';
 import { Service } from './Service';
 import { FaBeer, FaCoffee, FaApple } from 'react-icons/fa';
 
