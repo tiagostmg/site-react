@@ -1,12 +1,19 @@
 .wrapper {
-  display: grid;
-  grid-template-columns: 55% 45%;
-  align-items: flex-start; /* Alinha os itens ao topo por padrão */
+  display: flex; /* Altere de grid para flex */
+  height: 100vh; /* Altura total */
 }
 
 .leftSection {
+  flex: 1; /* Ambos os elementos ocupam o mesmo espaço */
   display: flex;
   flex-direction: column;
+}
+
+.rightSection {
+  flex: 1; /* Garante que ocupe o mesmo espaço que o .leftSection */
+  display: flex;
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 .textContent {
@@ -18,26 +25,20 @@
   background-color: var(--blue); /* Cor de fallback caso a imagem não carregue */
   background-size: cover;
   background-position: center;
-  height: auto;
-}
-
-.rightSection {
-  display: grid;
-  grid-template-rows: auto 1fr; /* A primeira linha para a foto, a segunda para os serviços */
-  gap: 20px; /* Espaçamento entre a foto e os serviços */
+  height: 100%;
 }
 
 .peoplePhoto {
-  /* Estilos para a foto das pessoas */
-  background-color: #ccc; /* Cor de fundo temporária */
-  height: auto; /* Ajusta a altura automaticamente */
-  overflow: hidden; /* Garante que a imagem respeite o border-radius */
+  width: 100%; /* Garante que a imagem ocupe toda a largura */
+  height: 100%; /* Garante que a imagem ocupe toda a altura */
+  overflow: hidden; /* Evita que a imagem ultrapasse os limites */
 }
 
 .peoplePhoto img {
-  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
 }
 
 .services {
@@ -46,10 +47,3 @@
   gap: 15px; /* Espaçamento entre os serviços */
 }
 
-.serviceItem {
-  background-color: #333; /* Cor de fundo dos serviços */
-  color: white;
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px; /* Opcional: Bordas arredondadas */
-}
