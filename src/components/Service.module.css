@@ -1,7 +1,7 @@
 .serviceItem {
-  background-color: #333;
+  /* background-color: #333; */
   color: white;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -15,9 +15,9 @@
 }
 
 .icon {
-  background-color: #555; /* Só pra destacar o ícone, se quiser */
-  padding: 10px;
-  border-radius: 8px;
+  /* background-color: #555; */
+  /* padding: 10px; */
+  /* border-radius: 8px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,7 @@
 }
 
 .description p {
-  margin: 0; /* Tirar espaço padrão */
+  margin-left: 20px; /* Tirar espaço padrão */
   font-size: 1rem;
   text-align: left;
 }

@@ -45,5 +45,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Três colunas de igual largura */
   gap: 15px; /* Espaçamento entre os serviços */
+  margin-left: 15px;
 }
 
